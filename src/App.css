@@ -230,4 +230,15 @@ Variables
       color: var(--clr-primary-7);
     }
   }
+  .strong {
+    color: var(--clr-primary-5);
+  }
   
+  .footer{
+    text-align: center;
+    border: none;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
+  
+  }

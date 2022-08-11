@@ -1,7 +1,6 @@
-import React, { useState, useRef, useEffect } from 'react'
-import { FaBars, FaTwitter } from 'react-icons/fa'
-import { links, social } from './data'
-import logo from './logo.svg'
+import React, { useState, useRef, useEffect } from 'react';
+import { FaBars } from 'react-icons/fa';
+import { links, social } from './data';
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
@@ -10,12 +9,17 @@ const Navbar = () => {
 
   useEffect(() => {
     const linksHeight = linksRef.current.getBoundingClientRect();
-    console.log(linksHeight);
+    if(showLinks){
+      linksContainerRef.current.style.height = `${linksHeight}px`
+    } else {
+      linksContainerRef.current.style.height = '0px'
+    }
   }, [showLinks]);
   return <nav>
     <div className='nav-center'>
       <div className='nav-header'>
-         <img src={logo} alt='logo' />
+        <h2>Krypto <strong className='strong'>Zone</strong></h2>
+        
          <button className='nav-toggle' onClick={() => setShowLinks(!showLinks)}>
           <FaBars />
          </button>
