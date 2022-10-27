@@ -41,7 +41,7 @@ export const social = [
   },
   {
     id: 3,
-    url: 'https://www.twitter.com',
+    url: 'https://www.link.com',
     icon: <FaLinkedin />,
   },
   {
