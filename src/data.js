@@ -46,7 +46,7 @@ export const social = [
   },
   {
     id: 4,
-    url: 'https://www.insta.com',
+    url: 'https://www.instagram.com',
     icon: <FaBehance />,
   },
 ]
